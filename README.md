@@ -49,8 +49,8 @@ The msg variable contains a String type value. Information about the number of c
 
 Analyze the code snippet:
 ```js
-Let counter = 0;
-Let userName = “John”;
+let counter = 0;
+let userName = “John”;
 ```
 
 After declaring a counter variable, we want to put a short comment with information about what the variable is used for. To do this, we modify the line with the declaration to the form:
