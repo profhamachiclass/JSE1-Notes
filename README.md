@@ -43,7 +43,7 @@ Entering `about:blank` in the address bar of your browser will:
 The JS code includes the 
 `console.log(“http://test.org”);` command. Its execution will Display the following message on the console: `“http://test.org”`
 
-## Module 2 Test Notes
+## Module 2 Notes
 The msg variable contains a String type value. Information about the number of characters of this string can be obtained using:
 
 
