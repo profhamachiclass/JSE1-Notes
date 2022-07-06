@@ -59,11 +59,14 @@ In the daysOfWeek variable, we place an array with the names of the days of dthe
 
 We want to declare a distance constant and initialize it with the value 120. What should such a declaration look like?
 
-Performing the operation: `let x = 100 / 0;` will result in:
+Performing the operation: `let x = 100 / 0;` will result in an `Infinity` value being stored in the variable `x`.
 
 We have declared an array of selected month names `let summer = [ “June”, “July”, “August”];` We want to change the value `“July”` stored in the array to the number `7`
+```js
+summer[1] = 7;
+```
 
-We perform the operation: `let x = “abcdefg”.slice(2, 4)` . As a result, the value:
+We perform the operation: `let x = “abcdefg”.slice(2, 4)` . As a result, the value `"cd"` will be written to the variable `x`.
 
 Analyze the following code:
 
@@ -72,30 +75,34 @@ let x = 10 / 100;
 console.log(typeof (x))
 ```
 
-As a result of its execution:
+As a result of its execution, it will display `"Number"` in the console.
 
 Analyze the following code:
 ```js
 let height = 180;
 {
-    let heigh = 200;
+    let height = 200;
     height = height + 10;
 }
 console.log(height);
 ```
+A value of `180` will be displayed in the console.
+
 Point out the correct declaration of the height variable:
 
-Complex (or composite) data types:
+Complex (or composite) data types: may consist of multiple elements, each of which may be of a primitive or composite type.
 
 We have declared an array of animals `let animals = [“dog”, “cat”, “hamster”]` . Then we call the method `animals.push(“canary”);` . As a result, the animals array will look like this:
-
+```js
+['dog', 'cat', 'hamster', 'canary']
+```
 
 Analyze the code snippet:
 ```js
 let summer = [“June”, “July”, “August”];
 let index = summer.indexOf(“June”);
 ```
-The index variable will have the value:
+The index variable will have the value `0`
 
 
 Analyze the code snippet:
@@ -115,7 +122,7 @@ We have access to the weight variable:
 
 What does **shadowing** mean?
 
-We can replace the declaration `let x = 0x21;` with:
+We can replace the declaration `let x = 0x21;` with `let x = 33;`
 
 Analyze the code snippet. Identify which variables are **local** and which are **global**:
 ```js
@@ -135,24 +142,24 @@ age =
 height =
 weight =
 
-We have declared an array of animals `let animals = [“dog”, “cat”, “hamster”]` . Then we call the method `animals.pop();`. As a result, the animals array will look like this:
+We have declared an array of animals `let animals = [“dog”, “cat”, “hamster”]` . Then we call the method `animals.pop();`. As a result, the animals array will look like this: `"[ 'dog', 'cat' ]"`
 
-In order to check the number of elements of the array stored in the `names` variable, we call:
+In order to check the number of elements of the array stored in the `names` variable, we call: `names.length`
 
-Performing the operation: `let x = 20n + 10;` will result in:
+Performing the operation: `let x = 20n + 10;` will result in: the program to abort due to an error
 
 Performing the operation: `let x = "Alice" + 10;` will result in:
 
-We want to convert the string `"1024"` to type **Number** and store the result in variable `n`. Point out the correct statement:
+We want to convert the string `"1024"` to type **Number** and store the result in variable `n`. Point out the correct statement: `let n = Number("1024");`
 
 We declare an object called `dog`, with two fields: `age` and `name`:
 ```js
 let dog = {
-    age: 5.
+    age: 5,
     name: "Axel"
 };
 ```
-To change the value of the `age` field to `6`, we need to perform:
+To change the value of the `age` field to `6`, we need to perform `dog.age = 6;`
 
 Review the following code (note the variable name):
 ```js
@@ -165,16 +172,16 @@ As a result of its execution, the following should appear in the console:
 If a variable stores the value `false`, then the variable:
 
 We have declared an array `let animals = [“dog”, “cat”, “hamster”]` . We want to temporarily comment out the element `"cat"`, and to do this, we can modify the declaration as follows:
+`let animals = ["dog",/*"cat",*/"hamster"];`
 
-We need to come up with a name for a variable where we will store **the age of a user**. All of the following variable names are formally correct, but one of them is the most readable, indicate which one:
+We need to come up with a name for a variable where we will store * *the age of a user**. All of the following variable names are formally correct, but one of them is the most readable, indicate which one: `userAge`
 
-By default, JavaScript allows us to write to an undeclared variable (it declares it implicitly for us). If we want the interpreter to treat such a situation as an error, we have to:
-
+By default, JavaScript allows us to write to an undeclared variable (it declares it implicitly for us). If we want the interpreter to treat such a situation as an error, we have to place the `"use strict";` directive at the beginning of the script.
 Analyze the following code:
 ```js
 let counter = 100;
 let counter = 200;
 counter = 300;
 ```
-As a result of its execution:
+As a result of its execution, the program will be aborted ue to an error (redeclaration of a variable).
 
