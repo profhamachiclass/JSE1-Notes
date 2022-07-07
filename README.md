@@ -44,7 +44,7 @@ The JS code includes the
 `console.log(“http://test.org”);` command. Its execution will Display the following message on the console: `“http://test.org”`
 
 ## Module 2 Notes
-The msg variable contains a String type value. Information about the number of characters of this string can be obtained using:
+The msg variable contains a String type value. Information about the number of characters of this string can be obtained using: `msg.length`
 
 
 Analyze the code snippet:
@@ -53,11 +53,14 @@ let counter = 0;
 let userName = “John”;
 ```
 
-After declaring a counter variable, we want to put a short comment with information about what the variable is used for. To do this, we modify the line with the declaration to the form:
+After declaring a counter variable, we want to put a short comment with information about what the variable is used for. To do this, we modify the line with the declaration to the form: `let counter = 0; // user visit counter`
 
-In the daysOfWeek variable, we place an array with the names of the days of dthe week. To reverse the order of the array elements, we should call:
+In the daysOfWeek variable, we place an array with the names of the days of dthe week. To reverse the order of the array elements, we should call: `daysOfWeek.reverse();`
 
 We want to declare a distance constant and initialize it with the value 120. What should such a declaration look like?
+```js
+const distance = 120;
+```
 
 Performing the operation: `let x = 100 / 0;` will result in an `Infinity` value being stored in the variable `x`.
 
@@ -110,17 +113,17 @@ Analyze the code snippet:
 let name;
 let age;
 {
-let height;					    // 2
-{							    // 2
+let height;				// 2
+{					// 2
 	let weight:	        // 1	// 2
-	console.log(name);
-}							    // 2
+	console.log(name);	// 1	//2
+}					// 2
 console.log(name);		// 2
 }
 ```
-We have access to the weight variable:
+We have access to the weight variable in the part marked **1**.
 
-What does **shadowing** mean?
+What does **shadowing** mean? Declaring a local variable with the same name as a previously declared global variable.
 
 We can replace the declaration `let x = 0x21;` with `let x = 33;`
 
@@ -136,11 +139,11 @@ let age;
     }
 }
 ```
-name =
-profession =
-age =
-height =
-weight =
+name = global
+profession = local
+age = global
+height = local
+weight = local
 
 We have declared an array of animals `let animals = [“dog”, “cat”, “hamster”]` . Then we call the method `animals.pop();`. As a result, the animals array will look like this: `"[ 'dog', 'cat' ]"`
 
@@ -148,7 +151,7 @@ In order to check the number of elements of the array stored in the `names` vari
 
 Performing the operation: `let x = 20n + 10;` will result in: the program to abort due to an error
 
-Performing the operation: `let x = "Alice" + 10;` will result in:
+Performing the operation: `let x = "Alice" + 10;` will result in the value `"Alice10"` of **String** type to be stored in the variable `x`.
 
 We want to convert the string `"1024"` to type **Number** and store the result in variable `n`. Point out the correct statement: `let n = Number("1024");`
 
@@ -169,7 +172,7 @@ console.log(Age);
 ```
 As a result of its execution, the following should appear in the console:
 
-If a variable stores the value `false`, then the variable:
+If a variable stores the value `false`, then the variable is of the **Boolean** type.
 
 We have declared an array `let animals = [“dog”, “cat”, “hamster”]` . We want to temporarily comment out the element `"cat"`, and to do this, we can modify the declaration as follows:
 `let animals = ["dog",/*"cat",*/"hamster"];`
