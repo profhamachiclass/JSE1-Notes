@@ -188,3 +188,52 @@ counter = 300;
 ```
 As a result of its execution, the program will be aborted ue to an error (redeclaration of a variable).
 
+## Module 3 Notes
+The result of the operation `false || "false"` will be `false`
+
+Analyze the following code:
+```js
+let test = prompt("Hello", "World");
+```
+What value will the `test` variable have if, after running the code, we immediately press the **OK** button on the newly created dialog? `"World"`
+
+The methods `window.alert`, `window.confirm`, and `window.prompt` are methods of the `window` object. Which of the following is **not true?**. the `alert`, `confirm`, and `prompt` methods require an argument specifying the position of the dialog box in which the information will be displayed.
+
+The `confirm` method allows you to create a dialog box. What value does this method return when the user closes the window? It depends on the option selected by the user.
+
+Analyze the code snippet:
+```js
+let n = 2 * 3 ** 3 - 1;
+```
+The result stored in the variable `n` is `53`
+
+Analyze the code snippet:
+```js
+let n = 10;
+let m = ++n;
+```
+Its execution will result in the following values in the variables `n` and `m`: n:`11`, m:`11`
+
+The result of the comparison `"abcd" > "Abcd"` will be `true`
+
+The result of the operation `!(true && false || true)` will be `false`
+
+The result of the operation `3 * 4 > 20 - 15` will be `true`
+
+Analyze the code snippet:
+```js
+let nr = 1;
+let x = (nr === 1);
+let y = (nr == 1);
+let z = (nr = 1);
+```
+After its execution, the variables `x`, `y`, and `z` will have the values: x:`false`, y:`true`, z:`1`
+
+The result of the operation `20 || 5` will be `20`
+
+The number `2` is stored in the variable `n (let n = 2;)`. The command `n = n*n*n` is the called. This last command can be replaced by: `n **= 3;`
+
+Which operator do we use if we want to check if two variables store the same values of exactly the same type? `===`
+
+The string `"12"` has been written into the `str` variable: (`let str = "12";`). Then the operation `str = +str` is performed. As a result, the variable `str` will contain `12`
+
