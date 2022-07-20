@@ -231,9 +231,145 @@ After its execution, the variables `x`, `y`, and `z` will have the values: x:`fa
 
 The result of the operation `20 || 5` will be `20`
 
-The number `2` is stored in the variable `n (let n = 2;)`. The command `n = n*n*n` is the called. This last command can be replaced by: `n **= 3;`
+The number `2` is stored in the variable `n (let n = 2;)`. The command `n = n*n*n` is then called. This last command can be replaced by: `n **= 3;`
 
 Which operator do we use if we want to check if two variables store the same values of exactly the same type? `===`
 
 The string `"12"` has been written into the `str` variable: (`let str = "12";`). Then the operation `str = +str` is performed. As a result, the variable `str` will contain `12`
 
+## Module 4 Notes
+If we want to display all the elements of the `days` array in reverse order (starting from the last element) then we can do this using the statement: `for(let i = days.length -1; i >= 0; i--) console.log(days[i]);`
+
+Examine the following code:
+```js
+for (let a = 5; a > 1; a--) {
+    console.log(a);
+}
+;
+```
+`let a = 5; while (a > 1) console.log(a--);`
+
+Review the following code snippet:
+```js
+if (counter <= 10 && confirm === false) {
+    console.log("test");
+}
+```
+What values can the `counter` and `confirm` variables have so that the console displays `"test"` as a result of code execution?
+
+counter: `10`, show: `false`
+
+Review the following code:
+```js
+let x = 100;
+if (x < 100)
+    x = 20;
+console.log(x)
+```
+What will be displayed in the console as a result of its execution?
+`100`
+
+Which of the following is **not a loop** instruction in JavaScript?
+
+`if ... else`
+
+Examine the following code:
+```js
+let car = {make: "Citroen", model: "DS"};
+for (let f in car) console.log(f);
+```
+What will appear on the console as a result?
+`"make""model"`
+
+Analyze the following code:
+```js
+for (let x = 10; x > 1; x -=2) console.log("hello");
+```
+
+How many times will "hello" be displayed in the console as a result of its execution? **5**
+
+Analyze the following code:
+```js
+let a = 10;
+do {
+    console.log(a--);
+} while (a > 3);
+```
+Which statement can replace the `do ... while` from the example above?
+`while (a > 3) console.log(a--);`
+
+The `switch` statement:
+**is a conditional statement that allows different actions to be taken depending on the value stored in the indicated variable.**
+
+
+Which of the following operators is a **ternary** one?
+
+**A **conditional** operator `? :`**
+
+We want to rewrite the following code snippet using the conditional operator:
+```js
+let name;
+if (test) {
+    name = 10;
+} else {
+    name = 20;
+}
+```
+Which notation is correct?
+`let name = test ? "Alice" : "Bob";`
+
+The condition `if (!a)` can be replaced by the condition:
+`if (a == false);`
+
+Which of the following loop instructions is intended only to loop through all the keys of the indicated **object**?
+`for ... in`
+
+which sequence of `if ... else` statements is **incorrect**?
+
+`if ... else ... else if ...`
+
+Examine the following code:
+```js
+for (let a = 4; a < 4; a++) {
+    console.log("test");
+}
+```
+How many times will `"test"` be displayed in the console as a result of its execution?
+**It will not be displayed at all**
+
+We store an array of animal names in the `animals` variable (e.g. `let animals = ["dog", "cat", "hamster", "rabbit"];`). Which of the following statements will display **exactly two** names from the array?
+
+`for (let i = 0; i < animals.length; i+=2) console.log(animals[i]);`
+
+The condition `if( a >= 0 )` can be replaced by the condition:
+`if (a > 0 || a == 0);`
+
+Examine the following code:
+```js
+let steps = [3, 2, 1];
+for (let n of steps) console.log(n);
+```
+What will appear on the console as a result?
+
+`3 2 1`
+
+Review the following code:
+```js
+if (counter <= 10) {
+    if (counter >= 10) {
+        console.log(1);
+    }
+}
+```
+We can replace it using:
+`if (counter == 10) console.log(1);`
+
+Analyze the following code:
+```js
+if (counter === 10) {
+    console.log("abc");
+}
+```
+How can we write the same condition using the `switch` statement?
+
+`switch(counter) {case 10 : console.log("abc")};`
