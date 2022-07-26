@@ -373,3 +373,103 @@ if (counter === 10) {
 How can we write the same condition using the `switch` statement?
 
 `switch(counter) {case 10 : console.log("abc")};`
+
+## Module 5 Notes
+If the function is to return some calculated value on completion, we use the following keyword to do so:
+`return;`
+
+We define a function using the following function expression:
+
+```js
+let sum = function (a, b) {
+    return (a + b);
+}
+```
+What could the definition of the corresponding arrow function look like?
+`let sum = (a, b) => a + b;`
+
+Analyze the code below:
+```js
+function test(counter) {
+    console.log("test");
+    if (counter > 0)
+        test (--counter);
+}
+
+test(3)
+```
+How many times will the word "test" be displayed in the console? `4`
+
+Review the following code:
+```js
+let x = 10;
+
+function test(x) {
+    console.log(x);
+}
+
+test(20);
+```
+What will be displayed in the console as a result of its execution? `20`
+
+Analyze the following code:
+```js
+let show = function () {
+    console.log(test);
+}
+setTimeout(show, 2000);
+```
+Its execution will cause:
+`the console to display "test" after a 2 second delay`
+
+Analyze the following code:
+```js
+let x = 10;
+
+function test() {
+    let x = 20;
+    console.log(x);
+}
+```
+What will be displayed in the console as a result of its execution? `Nothing will show up`
+
+We have defined an arrow function:
+```js
+let multiply = (m, n) => m * n;
+```
+We will try to write it in a slightly modified form, but without changing what it is supposed to do. Point out the correct definition:
+```js
+let multiply = (m, n) => return (m * n);
+```
+[let multiply = (m, n) => return (m * n);]
+[let multiply = (m, n) => { m * n;}]
+(yes)[let multiply = (m, n) => {return (m * n)};]
+(no)let multiply = (m, n) => {console.log(m * n)};
+
+
+The code snippet:
+```js
+function test() {
+
+}
+```
+is:
+the declaration of an empty `test` function.
+
+Review the following code:
+```js
+let x = 10;
+let y = 20;
+function test(y) {
+    console.log(y);
+}
+
+test(x);
+```
+What will be displayed in the console as a result of its execution?
+`10`
+
+We can use the `forEach` method to pass through the elements of an array. Which of the following code snippets will display all consecutive elements of the animals array in the console?
+`animals.forEach(a => {console.log(a);})`
+
+A `callback` function is a function that is passed to another function as an argument and only called in its code.
