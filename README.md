@@ -473,3 +473,32 @@ We can use the `forEach` method to pass through the elements of an array. Which 
 `animals.forEach(a => {console.log(a);})`
 
 A `callback` function is a function that is passed to another function as an argument and only called in its code.
+
+## Module 5 Notes
+Logical errors that we make while writing a program are not indicated by the interpreter. Why?
+The interpreter is unable to identify logical errors because they are not related to either the syntax or the semantics of the JavaScript language.
+
+Analyze the following code:
+```js
+try {
+	ocnsole.log("start");
+} catch (error) {
+	console.log("error");
+} finally {
+	console.log("end");
+}
+```
+What will hapen as a result of its execution?
+
+Analyze the following code:
+```js
+let x 10;
+console.log(x);
+```
+What exception will be thrown as a result of its execution attempt?
+
+Which of the following is a **syntax** error?
+- Missing parenthesis ending in a condition in an `if` statement.
+- Attempting to call a non-existent function.
+- Attempting to modify the value of a constant.
+- Attempting to read a value from a variable that we have not previously declared
