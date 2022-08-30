@@ -502,3 +502,96 @@ Which of the following is a **syntax** error?
 - Attempting to call a non-existent function.
 - Attempting to modify the value of a constant.
 - Attempting to read a value from a variable that we have not previously declared
+
+## Module 6 Notes
+Analyze the following code:
+```js
+try {
+    console.log("start");
+} catch (error) {
+    console.log("error");
+} finally {
+    console.log("end");
+}
+```
+What will happen as a result of its execution?
+The following words will appear in the console: `"start"`, `"end"`.
+
+Analyze the following code:
+```js
+let x = 10;
+ocnsole.log(x);
+```
+What exception will be thrown as a result of its execution attempt?
+**ReferenceError**
+
+Using the debugger, we insert a breakpoint in the code at which, after running the program, we stop. In the debugger, we find a `Step` button among the step-by-step operation options. What does pressing it do? **Exactly one instruction immediately after the breakpoint will be executed and the program will be paused again**
+
+```js
+try {
+    ocnsole.log("start");
+} catch (error) {
+    console.log("error");
+} finally {
+    console.log("end");}
+```
+What will happen as a result of its execution?
+The following words will appear in the console `"error"` `"end"`.
+
+Analyze the following code:
+```js
+"let x = 10;"
+console.log(x);
+```
+What exception will be thrown as a result of its execution attempt?
+**ReferenceError**
+
+Analyze the following code:
+```js
+try {
+    ocnsole.log("start");
+} catch (error) {
+    console.log("error");
+} 
+```
+What will happen as a result of its execution?
+In the console, there will appear in successive lines the words `"error"`, `"end"`.
+
+Which of the following is a **syntax** error? Missing parenthesis ending a condition in an `if` statement.
+
+Analyze the following code:
+```js
+const x = 10;
+onsole.log(x);
+x += 10;
+```
+What exception will be thrown as a result of its execution attempt?
+**ReferenceError**
+
+Where can we find in the debugger the information about currently called functions in our program? In the **call stack** window.
+
+Analyze the following code:
+```js
+let x 10;
+console.log(x);
+```
+What exception will be thrown as a result of its execution attempt? **SyntaxError**
+
+What is the name of the place where program code execution is halted? breakpoint
+
+Logical errors that we make while writing a program are not indicated by the interpreter. Why? **The interpreter is unable to identify logical errors because they are not related to either the syntax or the semantics of the JavaScript language.**
+
+We want to measure how long a certain piece of code executes. In order to do so, it is enough to:
+aprecede the fragment with the command `console.time("counter")` and end with `console.timeEnd("counter")`.
+
+Analyze the following code:
+```js
+const x = 10;
+x = 20;
+```
+What exception will be thrown as a result of its execution attempt? 
+**TypeError**
+
+## Final
+We can replace the declaration `let x = 3e-3;` with:
+'let x = 0.003;'
