@@ -474,7 +474,6 @@ We can use the `forEach` method to pass through the elements of an array. Which 
 
 A `callback` function is a function that is passed to another function as an argument and only called in its code.
 
-## Module 5 Notes
 Logical errors that we make while writing a program are not indicated by the interpreter. Why?
 The interpreter is unable to identify logical errors because they are not related to either the syntax or the semantics of the JavaScript language.
 
